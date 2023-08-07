@@ -1,0 +1,15 @@
+.todo{
+    position: relative;
+    margin-top: 80px;
+    z-index: 1;    
+}
+.todo-list{
+   margin: auto;
+   padding: 20px;
+   background-color: whitesmoke;
+   border-radius: 10px;
+   height: fit-content;
+}
+.todo-head{
+    margin: auto;
+}

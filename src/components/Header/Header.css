@@ -1,0 +1,10 @@
+.header{
+    padding: 5px 0px 5px 0px;
+    z-index: 2;
+}
+.sun{
+    color : orange;
+}
+.moon{
+    color: #0C317A;
+}

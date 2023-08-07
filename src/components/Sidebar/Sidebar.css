@@ -1,0 +1,16 @@
+.sidebar{
+   position: fixed;
+   height: 100%;
+   width: 20%;
+   padding: 5px 0px 5px 0px;
+   z-index: 3;
+}
+.nav-link{
+   color: white;
+}
+.nav-link:focus, .nav-link:hover{
+   color: white;
+}
+.nav-item:active, .nav-item:hover{
+   background-color: #454545;
+}
