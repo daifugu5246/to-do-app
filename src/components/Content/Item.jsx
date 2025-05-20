@@ -15,7 +15,7 @@ const Item = (props) => {
         props.onCheckboxChecked(props.task.id, !completeTasks)
     }
     const trashOnClick = () => {
-        props.onDelete(props.task.id);
+        props.onDeleted(props.task.id);
     }
     return (
         <div className='task row bg-white mt-2 mb-2 p-3' style={{ zIndex: 0 }}>
@@ -38,7 +38,7 @@ Item.propTypes = {
    task: PropTypes.object.isRequired,
    onStarClick: PropTypes.func,
    onCheckboxChecked: PropTypes.func,
-   onDelete: PropTypes.func,
+   onDeleted: PropTypes.func,
 };
 
 export default Item;

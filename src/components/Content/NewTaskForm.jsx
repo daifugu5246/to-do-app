@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 function NewTaskForm(props) {
   const onTrigger = (event) => {
-    props.addTask(event.target.inputTask.value);
+    props.addtask(event.target.inputTask.value);
     event.preventDefault();
     props.onHide();
   }
@@ -36,6 +36,6 @@ function NewTaskForm(props) {
 
 NewTaskForm.propTypes = {
     onHide: PropTypes.func.isRequired,
-    addTask: PropTypes.func.isRequired,
+    addtask: PropTypes.func.isRequired,
 }
 export default NewTaskForm
