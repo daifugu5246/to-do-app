@@ -34,7 +34,7 @@ const Header = (props) => {
                     </Button>              
                 </div>
                 <div className='myday-container position-absolute end-0'>
-                    <h3 className='myday m-0 h3'>THINGS TO DO</h3>
+                    <h3 className='myday m-0 h3'>TO DO</h3>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ const List = (props) => {
     }, [props.tasks]);
     
     return (
-        <div className="todo-list w-75 d-flex flex-column align-items-center">
+        <div className="todo-list d-flex flex-column align-items-center">
           {
             tasks.length === 0 ? (
                 <div key={null} className="notask h-100 d-flex justify-content-center align-items-center">

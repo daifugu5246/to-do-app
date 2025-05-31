@@ -22,7 +22,7 @@ const Item = (props) => {
             <div className='col-1'>
                 <input type="checkbox" className='check col-1 form-check-input' checked={completeTasks} onChange={checkboxOnChecked}></input>
             </div>
-            <div className='col-7 col-sm-9'>
+            <div className='col-8 col-sm-9'>
                 <label className='label form-check-label' style={{textDecorationLine: completeTasks ? 'line-through' : null}}>{props.task.taskName}</label>
             </div>
             <div className='col-1'>
