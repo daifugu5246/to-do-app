@@ -22,14 +22,14 @@ const Item = (props) => {
             <div className='col-1'>
                 <input type="checkbox" className='check col-1 form-check-input' checked={completeTasks} onChange={checkboxOnChecked}></input>
             </div>
-            <div className='col-9'>
+            <div className='col-7 col-sm-9'>
                 <label className='label form-check-label' style={{textDecorationLine: completeTasks ? 'line-through' : null}}>{props.task.taskName}</label>
             </div>
-            <div className='col-1 d-flex justify-content-around'>
-                <IoStar size={20} onClick={starOnClick} style={{color: importantTasks ? 'orange' : '#cccccc'}}/>
+            <div className='col-1'>
+                <IoStar className='star' size={20} onClick={starOnClick} style={{color: importantTasks ? 'orange' : '#cccccc'}}/>
             </div>
             <div className='col-1'>
-                <IoTrashOutline size={20} onClick={trashOnClick} style={{color: 'red'}} className='mb-2'></IoTrashOutline>
+                <IoTrashOutline className='gabage' size={20} onClick={trashOnClick} style={{color: 'red'}}></IoTrashOutline>
             </div>
         </div>
     )

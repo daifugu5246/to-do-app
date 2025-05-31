@@ -11,5 +11,17 @@
    height: fit-content;
 }
 .todo-head{
-    margin: auto;
+    margin: 0px auto 5px auto;
+}
+.todo-head h1{
+    margin: 0;
+}
+@media (max-width: 576px){
+    .todo-head h1 {
+        font-size: 24px;
+    }
+
+    .todo-head .btn {
+        padding: 3px 10px;
+    }
 }

@@ -78,7 +78,7 @@ const Content = (props) => {
         toggleSidebar={props.toggleSidebar}
       />
       {/*if sidebar show change position and width of content the position: relative is in css file*/}
-      <div className="todo" style={{ left: props.showSidebar ? "304px" : "0px", width: props.showSidebar ? "80%" : "100%"}}>
+      <div className="todo" style={{ top: props.showSidebar ? "172px" : "0px", width: "100%"}}>
         <div className="todo-head w-75 d-flex justify-content-between">
           <h1>
               {props.contentState === 0 ? "My Day" : props.contentState === 1 ? "Important" : "Completed"}

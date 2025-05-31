@@ -5,3 +5,12 @@
    border-radius: 10px;
    height: fit-content;
 }
+
+@media (max-width: 576px){
+   .todo-list{
+       padding: 10px;
+   }
+   .notask{
+      font-size: larger;
+   }
+}

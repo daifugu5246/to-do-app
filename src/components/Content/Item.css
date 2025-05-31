@@ -4,3 +4,14 @@
 .label{
     font-size: large;
 }
+@media (max-width: 576px){
+    .label{
+        font-size: medium;
+    }
+    .star{
+        width: 15px;
+    }
+    .gabage{
+        width: 15px
+    }
+}

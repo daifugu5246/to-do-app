@@ -16,7 +16,7 @@ const List = (props) => {
           {
             tasks.length === 0 ? (
                 <div key={null} className="notask h-100 d-flex justify-content-center align-items-center">
-                    <h1 className="text-secondary">No Task Available.</h1>
+                    <h1 className="notask text-secondary">No Task Available.</h1>
                 </div>
             ) : (
                 tasks.map((task) => (
@@ -29,94 +29,7 @@ const List = (props) => {
                     />
                 ))
             )
-            /* <>
-              {
-                props.contentState === 0 ? (
-                  tasks.filter((task) => !task.isComplete).length === 0 ? (
-                    <div
-                      key={null}
-                      className="notask h-100 d-flex justify-content-center align-items-center"
-                    >
-                      <h1 className="text-secondary">No task now.</h1>
-                    </div>
-                  ) : (
-                    tasks
-                      .filter((task) => !task.isComplete)
-                      .map((task) => (
-                        <Item
-                          key={task.id}
-                          task={task}
-                          onStarClick={onStarClick}
-                          onCheckboxChecked={onCheckboxChecked}
-                          onDelete={onDeleted}
-                        />
-                      ))
-                  )
-                ) : null
-              }
-
-              {
-                // if No data in tasks variable then show No tasks now.
-                // if content state is 1: Important then filter task that not completed and important.
-                // if have no satisfy data show No important task now.
-                props.contentState === 1 ? (
-                  tasks.filter((task) => task.isImportant && !task.isComplete)
-                    .length === 0 ? (
-                    <div
-                      key={null}
-                      className="notask h-100 d-flex justify-content-center align-items-center"
-                    >
-                      <h1 className="text-secondary">No important task now.</h1>
-                    </div>
-                  ) : (
-                    tasks
-                      .filter((task) => task.isImportant && !task.isComplete)
-                      .map((task) => (
-                        <Item
-                          key={task.id}
-                          task={task}
-                          onStarClick={onStarClick}
-                          onCheckboxChecked={onCheckboxChecked}
-                          onDelete={onDeleted}
-                        />
-                      ))
-                  )
-                ) : null
-              }
-
-              {
-                // if No data in tasks variable then show No tasks now.
-                // if content state is 2: Complete then filter task that completed.
-                // if have no satisfy data show No important task now.
-                props.contentState === 2 ? (
-                  tasks.filter((task) => task.isComplete).length === 0 ? (
-                    <div
-                      key={null}
-                      className="notask h-100 d-flex justify-content-center align-items-center"
-                    >
-                      <h1 className="text-secondary">No completed task now.</h1>
-                    </div>
-                  ) : (
-                    tasks
-                      .filter(
-                        (task) =>
-                          task.isComplete &&
-                          props.contentState !== 1 &&
-                          props.contentState !== 0
-                      )
-                      .map((task) => (
-                        <Item
-                          key={task.id}
-                          task={task}
-                          onStarClick={onStarClick}
-                          onCheckboxChecked={onCheckboxChecked}
-                          onDelete={onDeleted}
-                        />
-                      ))
-                  )
-                ) : null
-              }
-            </> */}
+          }
         </div>
     )
 }
