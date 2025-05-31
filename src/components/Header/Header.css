@@ -3,7 +3,16 @@
     z-index: 2;
 }
 
+.textTime-continer{
+    margin: 5px
+}
+
+.myday-container{
+    margin: 5px
+}
+
 @media (max-width: 576px){
+
     .textTime{
         font-size: 20px; 
     }

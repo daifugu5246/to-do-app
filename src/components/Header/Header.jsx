@@ -21,6 +21,9 @@ const Header = (props) => {
     return (
         <div className='header position-fixed bg-light' style={{width:'100%', right: '0px'}}>
             <div className='d-flex justify-content-around align-items-center'>
+                <div className='textTime-continer position-absolute start-0'>
+                    <h3 className='textTime m-0 h3'>{ time }</h3>
+                </div>
                 <div>
                     <Button variant="light" 
                             className='sidebar-toggle' 
@@ -30,10 +33,7 @@ const Header = (props) => {
                         <IoReorderThreeSharp size={28}/>
                     </Button>              
                 </div>
-                <div>
-                    <h3 className='textTime m-0 h3'>{ time }</h3>
-                </div>
-                <div>
+                <div className='myday-container position-absolute end-0'>
                     <h3 className='myday m-0 h3'>THINGS TO DO</h3>
                 </div>
             </div>
